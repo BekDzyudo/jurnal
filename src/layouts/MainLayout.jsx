@@ -5,9 +5,15 @@ import {Footer, Header} from "../components"
 function MainLayout() {
   return (
     <>
-    <Header/>
-    <Outlet/>
-    <Footer/>
+    <header>
+      <Header/>
+    </header>
+    <main>
+      <Outlet/>
+    </main>
+    <footer>
+      <Footer/>
+    </footer>
     </>
   )
 }

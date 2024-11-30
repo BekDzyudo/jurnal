@@ -5,7 +5,7 @@ import { IoLocation } from "react-icons/io5";
 
 function Footer() {
   return (
-    <footer className='bg-slate-200 py-5'>
+    <div className='bg-slate-200 py-5 mt-10'>
         <ul className='align-elements flex justify-around items-center'>
             <li className='flex items-center gap-3'>
                <div className='bg-slate-400 p-3 rounded-lg'>
@@ -35,7 +35,7 @@ function Footer() {
                </div>
             </li>
         </ul>
-</footer>
+</div>
   )
 }
 

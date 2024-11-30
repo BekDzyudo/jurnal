@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import MainLayout from "./layouts/MainLayout"
-import { Home } from "./pages"
+import { Home, Nashr, NashrLayout } from "./pages"
 
 function App() {
   const routes = createBrowserRouter([
@@ -11,6 +11,17 @@ function App() {
         {
           index: true,
           element: <Home/>
+        },
+        {
+          path: "nashrlar",
+          element: <NashrLayout/>,
+          children : [
+            {
+              index: true,
+              element: <Nashr/>
+            }
+
+          ]
         }
       ]
     }

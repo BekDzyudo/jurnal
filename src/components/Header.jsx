@@ -3,7 +3,7 @@ import { Link} from 'react-router-dom'
 
 function Header() {
   return (
-    <header className='bg-slate-200 py-5'>
+    <div className='bg-slate-200 py-5 mb-10'>
         <div className='align-elements flex justify-between items-center'>
         <Link to="/" className='font-semibold text-base'>TA'LIM FAN VA <br/> INNOVATSIYA JURNALI</Link>
         <nav className='flex items-center'>
@@ -15,7 +15,7 @@ function Header() {
                     <Link className='text-base'>Jurnal</Link>
                 </li>
                 <li>
-                    <Link className='text-base'>Nashrlar</Link>
+                    <Link className='text-base' to="/nashrlar">Nashrlar</Link>
                 </li>
                 <li>
                     <Link className='text-base'>Talabnoma</Link>
@@ -36,7 +36,7 @@ function Header() {
             </form>
         </nav>
         </div>
-    </header>
+    </div>
   )
 }
 
