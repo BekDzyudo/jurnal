@@ -2,15 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  color: #45b3c2,
+}
+
 @layer components {
     .align-elements {
       @apply max-w-[1600px] mx-auto px-5;
     }
-    .isActive{
-      @apply bg-slate-400 text-white w-full
-    }
-    .sidebar_btn{
-      @apply btn bg-slate-300 text-base w-full
+    .active{
+      @apply bg-[#45b3c2] text-white
     }
 
     html,
